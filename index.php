@@ -31,14 +31,14 @@
     <!--------------------------------->
      <!-- Connexion section start -->
 
-    <?php include("pages/connexion.php") ?>
+     <?php include("pages/connexion.php") ?> 
 
          <!-- Connexion section end -->
         <!--------------------------------->
         <!--------------------------------->
         <!-- inscription section start -->
 
-    <?php include("pages/inscription.php") ?>
+    <?php /* include("pages/inscription.php") */ ?>
 
       <!-- inscription section end -->
     <!--------------------------------->
@@ -47,12 +47,11 @@
 
     <?php
 
-        if(isset($_SESSION["idUser"])){
-            include("pages/secure/dash.php") ;
+        /* if(isset($_SESSION["idUser"])){
+            header("location:pages/secure/dash.php") ;
         }else{
-            include("pages/connexion.php") ;
-            include("pages/inscription.php") ;
-        }
+            header("location:index.php") ;
+        }  */
 
     ?>
 

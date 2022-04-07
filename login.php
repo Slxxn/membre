@@ -11,7 +11,7 @@
         /* session start */
         $user = $rqUser->fetch_object() ; 
         $_SESSION["idUser"] = $user->id ; 
-        header("location:/index.php") ;
+        header("location:/pages/secure/dash.php") ;
 
     }else{
 
